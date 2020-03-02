@@ -29,7 +29,7 @@
 
         let divArr = document.getElementsByTagName("div");
         for (var i = 0; i < divArr.length; i++) {
-            divArr[i].onclick = getColor;
+            divArr[i].onmouseover = getColor;
 
             function getColor () {
                 let x = getRandomInt ();
@@ -42,7 +42,7 @@
         }
 
         function getRandomInt() {    
-        return Math.floor(Math.random() * (266 - 0)) + 0;
+        return Math.floor(Math.random() * (256 - 0)) + 0;
         }
 
         function setHandler() {
