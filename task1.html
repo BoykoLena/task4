@@ -10,9 +10,9 @@
     // индекс - 55535 - 5 numbers
     let patternCode = /\d{5}/; 
     // ip адресс, пример 255.255.255.255
-    let patternIP = /\d{3}\.+\d{3}\.+\d{3}/    
+    let patternIP = /\d{3}\.+\d{3}\.+\d{3}\.+\d{3}/    
     // цены в долларах - $0.84, $2.84, $4
-    let patternPrice = /^\$\d{1,2}\.?\d{0,2}$/
+    let patternPrice = /\$\d{1,2}\.?\d{0,2}/g
     // дата в виде - 30/12/2016 - день, месяц, год
     let patternDate = /\d{1,2}\/\d{1,2}\/\d{4}/;
  	</script>
